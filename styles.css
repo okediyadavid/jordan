@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+}
+
+.left {
+    background-color: #7E6E61;
+    padding: 20px;
+    height: 511px;
+    border-bottom-right-radius: 20px;
+}
+
+h1 {
+    position: absolute;
+    width: 200px; 
+    height: 30px; 
+    color: #231102;
+    text-align: center;
+    top: -154px;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 245px; 
+    font-weight: bold; 
+}
+
+.right {
+    width: 578px;
+    height: 61px;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.51px;
+    text-align: left;
+    padding: 20px;
+    border-top-left-radius: 50px;
+}
+
+.right h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.51px;
+    text-align: left;
+}
+
+.right p {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    text-align: left;
+    color: #ABAEB3
+}
+
+.right button {
+    width: 100px;
+    height: 33px;
+    background: orange;
+    color: white;
+    margin-top: 20px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+.right img.small-image {
+    position: absolute;
+    float: left;
+    margin-right: 10px;
+    margin-left: -310px;
+}
+
+.bounce {
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.right img.product-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px dashed #7E6E61; 
+    border-bottom: 3px dashed #7E6E61; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: auto;
+        border-radius: 0;
+    }
+
+    h1 {
+        position: static;
+        width: auto;
+        height: auto;
+        font-size: 100px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .right button {
+        margin: 20px auto;
+    }
+
+    .right img.small-image {
+        position: static;
+        float: none;
+        margin: 0;
+    }
+}
